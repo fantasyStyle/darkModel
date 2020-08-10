@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           builder: (context, darkmodeModel, _) {
             debugPrint('当前的模式${darkmodeModel.darkMode}');
             return MaterialApp(
-              title: '工友帮',
+              title: 'darkModel',
               supportedLocales: [
                 //此处
                 const Locale('zh', 'CH'),
@@ -134,10 +134,6 @@ class MyApp extends StatelessWidget {
                 //定义路由的时候‘/’表示路由的根或者初始路由，默认显示的
                 '/': (context) => DarkMU(),
               },
-              navigatorObservers: [
-          
-              ],
-              // home: SplashPage(), //启动页
             );
           },
         ));
